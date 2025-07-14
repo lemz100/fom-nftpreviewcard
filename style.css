@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Outfit;
+    src: url(./fonts/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue500: hsl(215, 51%, 70%);
+    --cyan400: hsl(178, 100%, 50%);
+    --blue950: hsl(217, 54%, 11%);
+    --blue900: hsl(216, 50%, 16%);
+    --blue800: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--blue950);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 16vw);
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue900);
+    padding: 1.5rem;
+    gap: 1rem;
+    font-family: Outfit;
+    max-width: 380px;
+    border-radius: 1.25rem;
+}
+
+.equilibrium-img {
+    max-inline-size: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.85rem;
+}
+
+.card-heading {
+    color: white;
+    align-self: flex-start;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-desc {
+    color: var(--blue500);
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.nft-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.eth, .time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.eth {
+    color: var(--cyan400);
+}
+
+.time {
+    color: var(--blue500);
+}
+
+.author {
+    width: 100%;
+    border-top: 2px solid var(--blue800);
+    font-size: 0.85rem;
+    color: var(--blue500);
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding-top: 0.75rem;
+    padding-inline: 0.2rem;
+}
+
+.author figure {
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author img {
+    display: block;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.author p span {
+    color: white;
+}
